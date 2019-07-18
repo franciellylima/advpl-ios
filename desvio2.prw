@@ -1,15 +1,13 @@
 #include "Protheus.ch"
 
-user function Desvio2 ()
-Local nValor1 := Val(FwiNPUTbOX( "Insira valor"))
+User function Desvio2()
+Local nValor := Val( FWInputBox("Insira um Número"))
+Local nValor2 := Val( FWInputBox("Insira um Número"))
 
+If nvalor > nValor2
+alert(nValor)
+ else
+ alert(nValor2)
+ endif 
 
-if nValor1 >0 
-alert("Positivo")
-elseif nvalor1<0 
-alert("Negativo")
-else 
-alert("Zero")
-endif 
-
-return 
+Return 
